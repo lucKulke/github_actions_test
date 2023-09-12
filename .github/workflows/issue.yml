@@ -1,0 +1,8 @@
+name: Issue
+on: issues
+jobs:
+  allways:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'issue was created'
+      - run: echo "${{ github }}"
